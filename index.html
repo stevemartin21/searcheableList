@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Steve Martin Tech</title>
+    <title>Searcheable List</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -42,20 +42,31 @@
 
 
 
+
+
+
 <div class="container">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-            <ul id="myUL">
-              <li><a href="#">Basketball</a></li>
-              <li><a href="#">Soccer</a></li>
+<div class="card">
+    <div class="card-body card-title text-center">
+        Team Names and Points
+    </div>
+</div>
 
-              <li><a href="#">Football</a></li>
-              <li><a href="#">Tennis</a></li>
 
-              <li><a href="#">Golf</a></li>
-              <li><a href="#">Swimming</a></li>
-              <li><a href="#">Lifting</a></li>
-            </ul>
+            <input type="text" id="searchInput" onkeyup="listSearch()" placeholder="Search for teams..">
+
+        <ul id="teamList">
+  <li><a href="#">Blue Team<span class="badge badge-primary badge-pill">21</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+  <li><a href="#">Red Team<span class="badge badge-primary badge-pill">12</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+
+  <li><a href="#">Eagle Team<span class="badge badge-primary badge-pill">7</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+  <li><a href="#">Team River<span class="badge badge-primary badge-pill">3</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+
+  <li><a href="#">Black Team<span class="badge badge-primary badge-pill">11</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+  <li><a href="#">White Team<span class="badge badge-primary badge-pill">14</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+  <li><a href="#">Green Team<span class="badge badge-primary badge-pill">10</span><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+</ul>    
 
 </div>
 
@@ -64,7 +75,12 @@
 
   <div class="container" id="faq">
         <form>
-            <p class="h4 text-center mb-4">Send us your question</p>
+            <div class="card-fluid">
+                <div class="card-body card-title text-center">
+                    Contact Us
+            </div>
+            </div>
+            
 
             <!-- Material input text -->
             <div class="md-form">
